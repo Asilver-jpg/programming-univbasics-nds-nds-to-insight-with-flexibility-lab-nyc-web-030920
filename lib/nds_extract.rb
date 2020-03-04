@@ -40,7 +40,7 @@ def movies_with_director_key(name, movies_collection)
   toAdd = {name => ele[:title]}
   result >> toAdd
     end
-  end
+  
   
   result
 end
