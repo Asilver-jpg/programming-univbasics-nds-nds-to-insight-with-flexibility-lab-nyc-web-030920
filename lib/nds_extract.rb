@@ -45,7 +45,7 @@ end
 
 
 def gross_per_studio(collection)
-  binding.pry
+  
   h= Hash.new(0)
   collection.each do |ele|
     name= ele[:studio]
