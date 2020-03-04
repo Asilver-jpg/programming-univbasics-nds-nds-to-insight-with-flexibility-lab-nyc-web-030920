@@ -39,14 +39,13 @@ def movies_with_director_key(name, movies_collection)
   movies_collection.each do |ele|
   toAdd = {name => ele[:title]}
   result << toAdd
-    end
-  
-  binding.pry
+  end
   result
 end
 
 
 def gross_per_studio(collection)
+  binding.pry
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
   # each studio.
