@@ -34,7 +34,7 @@ end
 # Your code after this point
 
 def movies_with_director_key(name, movies_collection)
-  binding.pry
+ 
   result =[]
   movies_collection.each do |ele|
   toAdd = {name => ele[:title]}
