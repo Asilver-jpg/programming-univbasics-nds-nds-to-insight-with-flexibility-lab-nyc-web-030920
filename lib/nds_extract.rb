@@ -41,7 +41,7 @@ def movies_with_director_key(name, movies_collection)
   result << toAdd
     end
   
-  
+  binding.pry
   result
 end
 
