@@ -48,6 +48,7 @@ def gross_per_studio(collection)
   
   h= Hash.new(0)
   collection.each do |ele|
+    binding.pry
     name= ele[:studio]
     h[name] += ele[:worldwide_gross]
   end
@@ -86,8 +87,7 @@ def movies_with_directors_set(source)
       arr << movie_title
     end
   end
-  binding.pry
-  arr
+arr
 end
 
 # ----------------    End of Your Code Region --------------------
