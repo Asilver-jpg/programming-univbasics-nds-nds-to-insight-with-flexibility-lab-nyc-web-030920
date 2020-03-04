@@ -79,10 +79,14 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
   arr= []
   source.each do  |ele|
-    binding.pry
-    
-    
+    movies= ele[:movies]
+    movies.each do |movie_title|
+      movie_title[:director_name] = ele[:name]
+      arr << movie_title
+    end
   end
+  binding.pry
+  arr
 end
 
 # ----------------    End of Your Code Region --------------------
