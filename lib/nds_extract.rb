@@ -38,7 +38,7 @@ def movies_with_director_key(name, movies_collection)
   result =[]
   movies_collection.each do |ele|
   toAdd = {name => ele[:title]}
-  result >> toAdd
+  result << toAdd
     end
   
   
